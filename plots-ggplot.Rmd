@@ -8,3 +8,32 @@ output: pdf_document
 # Plots with ggplot2
 
 We are going to make plots in R and it's going to be amazing.
+
+I will now check out reprex
+
+```{r}
+# Load packages
+library(reprex)
+library(skimr)
+library(tidyverse)
+```
+
+
+```{r}
+# Load packages
+library(tidyverse)
+# Practicing a reprex and Issues. 
+# Allison_horst how do I change the point color to cyan?
+# Make graph for reprex
+ggplot(cars, aes(speed, dist)) +
+  geom_point()
+```
+
+```{r}
+# filter the mtcars dataset
+library(tidyverse)
+# Filter to mpg more than 26
+mtcars %>% filter(mpg > 26)
+
+```
+
